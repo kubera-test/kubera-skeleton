@@ -34,7 +34,7 @@ $ mvn clean
 新しいバージョンの jar が配信された場合は、`lib`ディレクトリに`jar`を配置して、`pom.xml`の`kubera.test.version`を更新してから、ローカルリポジトリへの再登録を行ってください。
 ```xml
 <properties>
-    <kubera.test.version>0.6a</kubera.test.version>
+    <kubera.test.version>0.6</kubera.test.version>
 </properties>
 ```
 
