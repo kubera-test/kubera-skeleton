@@ -43,9 +43,12 @@ $ mvn clean
 
 #### ツールの起動
 `kubera-skeleton`のルートディレクトリにて、以下のコマンドを実行してください。  
-**現在のバージョンでは Chrome が必要となります。**
 ```shell
-$ mvn compile exec:java -Dexec.args=[http://localhost:8080(テスト対象のトップページURL)]
+テスト対象のトップページのURLを引数として渡して起動します
+$ mvn compile exec:java -Dexec.args=http://localhost:8080
+
+作成されるファイル名を指定する場合はこちらのように引数が二つになります
+$ mvn compile exec:java -Dexec.args="http://localhost:8080 テストケースファイル名.xlsx"
 ```
 ブラウザが起動して、ツールを実行したターミナルには以下のようなログが出力されます。
 ```shell
